@@ -1,0 +1,362 @@
+
+/*adapted from http://codepen.io/devatrox/pen/wztlx - Jason Nickel*/
+html {
+	height: 100%;
+}
+
+body {
+	max-height: 100%;
+	display: flex;
+	flex-direction: column;
+	background-color: lightgrey;
+	background-position: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	padding-bottom: 70px;
+	font-family: 'Orbitron', sans-serif;
+}
+
+.cover { /*image from https://www.transparenttextures.com/*/
+	background-color: rgba(0, 0, 0, .6);
+	background-image: url(../img/otis-redding.png);
+	z-index: 10;
+	top: 0;
+	position: absolute;
+	width: 99.1vw;
+	height: 100vh;
+}
+@media (max-width: 1440px) {
+	.cover {
+		width: 98.8vw;
+	}
+}
+@media (max-width: 1024px) {
+	.cover {
+		width: 100vw;
+	}
+}
+@media (max-width: 768px) {
+	.cover {
+		width: 100vw;
+	}
+}
+/*******************************************
+buttons
+*******************************************/
+.custom-btn{ /*site navigation buttons*/
+	display: inline-block;
+	font-size: 2rem;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	color: #880054 !important;
+	background-color: lightgrey;
+	border: none;
+	border-radius: 10%;
+	box-shadow: inset 0 0 10px #1A1818;
+	width: 30vw;
+	transition-duration: 500ms;
+}
+.custom-btn2{ /*site navigation buttons*/
+	width:120px;
+}
+
+.custom-btn3{ /*site navigation buttons*/
+	font-size: 1.5rem;
+	width: 66%;
+	position: absolute;
+	bottom: 6%;
+}
+.custom-btn:hover{ /*site navigation buttons*/
+	color: #C1002F !important;
+	background-color: dimgray;
+	box-shadow: inset 0 0 5px #1A1818;
+	transition-duration: 500ms;
+}
+.custom-btn:active{ /*site navigation buttons*/
+	color: #FF3E00 !important;
+	background-color: #1A1818;
+	box-shadow: inset 0 0 5px dimgray;
+	transition-duration: 200ms;
+}
+.top {
+	padding-top: 2%;
+}
+.bottom {
+	padding-bottom: 2%;
+}
+/*********************************************************
+navbar
+*********************************************************/
+.navbar { /*texture from https://www.transparenttextures.com/*/
+	min-height: 10%;
+	background-color: rgba(184,184,184,.5);
+	background-image: url(../img/gplay.png);
+ }
+.navbar-toggle {
+	color: #1A1818;
+}
+.navbar-dark .navbar-brand {
+	padding-top: 22px;
+	font-size: 2.2rem;
+	background: linear-gradient(270deg,black, black, black, black, #31018C,#31018C, #4C007E, #4C007E, #880054, #880054, #C1002F, #C1002F, #FF3E00, #FF3E00, #FF7D00, #FF7D00, #FFB300, #FFB300, #FCFC07, #FCFC07, #B7F113, #B7F113, black, black, black, black);
+);
+	background-size: 800% 800%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.animate-nav {
+	background: linear-gradient(270deg,black, black, black, black, #31018C,#31018C, #4C007E, #4C007E, #880054, #880054, #C1002F, #C1002F, #FF3E00, #FF3E00, #FF7D00, #FF7D00, #FFB300, #FFB300, #FCFC07, #FCFC07, #B7F113, #B7F113, black, black, black, black);
+);
+	background-size: 800% 800%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: bg-shift 4s;
+
+}
+
+@keyframes bg-shift {
+	0%{
+		background-position:0% 50%
+	}
+	50%{
+		background-position:100% 50%
+	}
+	100%{
+		background-position:0% 50%
+	}
+}
+
+@media (max-width: 750px) {
+	.navbar-fixed-top{
+		display: none;
+	}
+}
+@media (min-width: 750px) {
+	.navbar-fixed-bottom{
+		display: none;
+	}
+}
+
+/**********************************************************
+parallax only for large screens
+**********************************************************/
+@media (min-width: 750px) {
+	.mobile-background{
+		display: none;
+	}
+	.filler {
+		display: none;
+	}
+	/*parallax effect by david walsh https://davidwalsh.name/parallax*/
+	.parallax [class*="bg__"] {
+		position: relative;
+		height: 50vh;
+		text-indent: -9999px;
+		background-attachment: fixed;
+		background-position: top center;
+		background-size: cover;
+	}
+
+	.parallax [class*="bg__"]:nth-child(2n) {
+		box-shadow: inset 0 0 1em #111;
+	}
+
+	.parallax .bg__foo, .parallax .bg__bazz {
+		height: 100vh;
+
+	}
+
+	.parallax .bg__foo {
+		background-image: url(../img/center-1733895.jpg);
+		filter: grayscale(100%);
+		filter: blur(10px);
+	}
+
+	.parallax .bg__bar {
+		background-image: url(../img/center-1733895.jpg);
+		filter: grayscale(100%);
+	}
+
+	.parallax .bg__baz {
+		background-image: url(../img/center-1733895.jpg);
+	}
+
+	.parallax .bg__bazz {
+		background-image: url(../img/center-1733895.jpg);
+		filter: grayscale(100%);
+	}
+
+	.parallax .bg__break {
+		box-shadow: inset 0 0 1em #111;
+		background-image: url(../img/center-1733895.jpg);
+	}
+
+	.parallax .capture {
+		float: right;
+		width: 200px;
+		padding: 1em;
+		margin: -1.5em 1em 0 0;
+		text-indent: 0;
+		background: rgba(243, 243, 243, 0.75);
+		box-shadow: 0 1px 0.125em #333;
+	}
+
+	article .container {
+		width: 600px;
+		margin: 0 auto;
+	}
+
+	article header {
+		position: relative;
+		margin: -5em 0 0 0;
+		padding: 1em;
+		text-align: left;
+		font-size: 2em;
+		color: #333;
+		background-color: rgba(255, 255, 255, 0.75);
+	}
+
+	article h1, article h2 {
+		margin: 0 0 0.333em;
+	}
+
+	article section {
+		padding: 3em;
+	}
+
+	article section.parallax {
+		margin: 0;
+		padding: 0;
+	}
+}
+/**********************************************************
+background for mobile devices
+**********************************************************/
+@media (max-width: 750px) {
+
+	.mobile-background {
+		background-image: url(../img/center-mobile.jpg);
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+		height: 100vh;
+		background-repeat: no-repeat;
+		z-index: -1;
+		filter: blur(10px);
+	}
+
+	.filler {
+		height: 100vh;
+		background: transparent;
+	}
+	.v-center { /*for centering things vertically mobile*/
+		padding-top: 47vh;
+	}
+	.content{
+		padding-bottom: 15vh;
+	}
+
+	@media (max-width: 500px) {
+		.last {
+			padding-bottom: 100%;
+		}
+	}
+	.last {
+		padding-bottom: 30%;
+	}
+	.separated {
+		 padding-bottom: 20px;
+		 border-bottom: 2px solid #1A1818;
+	 }
+	.no-overflow {
+		width: 97vw;
+	}
+
+	.label_select {
+		color: #880054;
+	}
+}
+
+.pad-down {
+	padding-top:20px;
+}
+/*******************************
+links and misc
+*******************************/
+a {
+	color: #1A1818;
+	font-size: 2rem;
+	font-weight: 600;
+}
+a:visited, a:active {
+	color: #880054;
+}
+@media (min-width: 750px){
+.v-center { /*for centering things vertically full screen*/
+	padding-top: 55vh;
+}
+
+}
+
+/*****************************************
+language selection interface
+*****************************************/
+input[type=radio] {
+	display:none;
+}
+.lang_label {
+  padding: 10px;
+}
+.lang_label:hover {
+	cursor: pointer;
+}
+.label_select {
+	color: #880054;
+}
+.transparent-btn {
+	padding-top: 10px;
+	background-color: transparent;
+	border: none;
+}
+.german {
+	font-size: 1.3rem;
+}
+
+.recap-style {
+	margin-right: 50%;
+	transform:scale(0.60);
+	transform-origin:0 0;
+}
+/*****************************************
+thumbnails
+*****************************************/
+.thumbnail {
+	height: 250px;
+	height: 400px;
+	margin-left: 30px;
+}
+@media (min-width: 500px) {
+	.thumbnail {
+		height: 250px;
+		height: 530px;
+		margin-left: 30px;
+	}
+}
+
+.thumbnail-row {
+	width: 100%;
+
+}
+/**********************************
+img
+**********************************/
+@media (min-width: 500px) {
+	.intro-image {
+		padding-left: 10%;
+		padding-bottom: 3%;
+	}
+}
