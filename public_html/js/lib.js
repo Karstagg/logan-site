@@ -52,6 +52,7 @@ $(document).ready(function() {
 	else {
 		timeOfDay = "evening"
 	}
+	timeOfDay = "evening"
 	function insertText () {
 		currentLanguage = readCookie("lang");
 
@@ -59,18 +60,24 @@ $(document).ready(function() {
 		switch(timeOfDay) {
 			case "morning":
 				$("#greeting").load("php/content-" + currentLanguage + ".php #morning-" + currentLanguage);
-					$(".bg_need").addClass("morning");
-					$(".need-text").addClass("morning-text");
+				$(".bg_need").addClass("morning");
+				$(".need-text").addClass("morning-text");
+				$(".need-nav-bg").addClass("nav-morning");
+				$("body").addClass("morning-color");
 				break;
 			case "afternoon":
 				$("#greeting").load("php/content-" + currentLanguage + ".php #afternoon-" + currentLanguage);
-					$(".bg_need").addClass("noon");
-					$(".need-text").addClass("day-text");
+				$(".bg_need").addClass("noon");
+				$(".need-text").addClass("day-text");
+				$(".need-nav-bg").addClass("nav-day");
+				$("body").addClass("day-color");
 				break;
 			case "evening":
 				$("#greeting").load("php/content-" + currentLanguage + ".php #evening-" + currentLanguage);
 				$(".bg_need").addClass("night");
 				$(".need-text").addClass("night-text");
+				$(".need-nav-bg").addClass("nav-night");
+				$("body").addClass("night-color");
 				break;
 		}
 

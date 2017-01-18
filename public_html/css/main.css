@@ -8,7 +8,6 @@ body {
 	max-height: 100%;
 	display: flex;
 	flex-direction: column;
-	background-color: lightgrey;
 	background-position: center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -50,17 +49,40 @@ body {
 .night-text {
 	font-family: 'Rock Salt', cursive;
 }
+.nav-night {
+	background-image: url(../img/skulls.png);
+	background-color: rgba(206, 136, 22, .5);
+}
+.night-color {
+	background-color: rgba(251, 186, 184, 1);
+}
 .noon {
 	background-image: url(../img/Superman-and-ponyo.JPG);
 }
 .day-text {
-	font-family: 'Pacifico', cursive;
+	font-family: 'Righteous', cursive;
+	font-size: 2rem;
+}
+.nav-day {
+	background-image: url(../img/shattered.png);
+	background-color: rgba(69, 156, 235, .5);
+}
+.day-color {
+	background-color: rgba(167, 207, 233, 1);
 }
 .morning {
 	background-image: url(../img/logan-sakura.jpg);
 }
 .morning-text {
 	font-family: 'Pacifico', cursive;
+	font-size: 2rem;
+}
+.nav-morning {
+	background-image: url(../img/gray-floral.png);
+	background-color: rgba(229, 227, 230, .5);
+}
+.morning-color {
+	background-color: rgba(146, 143, 170, 1);
 }
 /*******************************************
 buttons
@@ -113,8 +135,6 @@ navbar
 *********************************************************/
 .navbar { /*texture from https://www.transparenttextures.com/*/
 	min-height: 10%;
-	background-color: rgba(184,184,184,.5);
-	background-image: url(../img/gplay.png);
  }
 .navbar-toggle {
 	color: #1A1818;

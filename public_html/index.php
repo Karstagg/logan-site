@@ -15,7 +15,7 @@
 
 		<!-- add custom css after bootstrap-->
 		<link rel="stylesheet" href="css/main.css" type="text/css"/>
-		<link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Pacifico|Rock+Salt" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Pacifico|Righteous|Rock+Salt" rel="stylesheet">
 		<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
 		<!-- HTML5 shiv and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -37,7 +37,7 @@
 	</head>
 	<body>
 
-		<nav class="navbar navbar-dark bg-inverse navbar-fixed-top need-text">
+		<nav class="navbar navbar-dark bg-inverse navbar-fixed-top need-text need-nav-bg">
 			<div class="container-fluid">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
@@ -176,7 +176,7 @@
 
 	</body>
 	<footer>
-		<nav class="navbar navbar-dark bg-inverse navbar-fixed-bottom inanimate-nav need-text">
+		<nav class="navbar navbar-dark bg-inverse navbar-fixed-bottom inanimate-nav need-text need-nav-bg">
 			<div class="container-fluid">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
