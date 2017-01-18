@@ -15,7 +15,7 @@
 
 		<!-- add custom css after bootstrap-->
 		<link rel="stylesheet" href="css/main.css" type="text/css"/>
-		<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Pacifico|Rock+Salt" rel="stylesheet">
 		<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
 		<!-- HTML5 shiv and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -33,11 +33,11 @@
 		<script src='https://www.google.com/recaptcha/api.js'></script>
 		<!--custom js-->
 		<script src="js/lib.js"></script>
-		<title>Matthew R. Fisher</title>
+		<title>Logan Young</title>
 	</head>
 	<body>
 
-		<nav class="navbar navbar-dark bg-inverse navbar-fixed-top">
+		<nav class="navbar navbar-dark bg-inverse navbar-fixed-top need-text">
 			<div class="container-fluid">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
@@ -48,7 +48,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand scroll" href="#page-top">m-fisher.net</a>
+					<a class="navbar-brand scroll" href="#page-top">Logan Young</a>
 				</div>
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right">
@@ -63,12 +63,9 @@
 									<input name="lang2" id="de2" type="radio" value="de"></li>
 							</ul>
 						</li>
-						<li><a href="#intro" class="scroll"><div class="intro-link"></div></a></li>
-						<li><a href="#other-work" class="scroll"><div class="other-work-link"></div></a></li>
-						<li><a href="#contact" class="scroll"><div class="contact-link"></div></a></li>
-						<li><a href="https://www.linkedin.com/in/matthew-r-fisher" target="_blank">LinkedIn</a></li>
-						<li><a href="https://github.com/karstagg" target="_blank" >Github</a></li>
-						<li><a href="./img/matthew_fisher_resume.pdf" target="_blank"><div class="resume-link"></div></a></li>
+						<li><a href="#intro" class="scroll"><div class="intro-link need-text"></div></a></li>
+						<li><a href="#other-work" class="scroll"><div class="other-work-link need-text"></div></a></li>
+						<li><a href="#contact" class="scroll"><div class="contact-link need-text"></div></a></li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container-fluid -->
@@ -77,25 +74,25 @@
 			<div class="parallax">
 
 
-				<div class="mobile-background"></div>
+				<div class="mobile-background bg_need"></div>
 
 				<div class="cover">
 					<div class="col-xs-6 text-center col-xs-offset-3 v-center">
-						<a href="#intro" class="btn custom-btn scroll"><div id="enter-btn"></div></a>
+						<a href="#intro" class="btn custom-btn scroll need-text"><div id="enter-btn"></div></a>
 					</div>
 				</div>
-				<div class="bg__foo"></div>
-				<div class="bg__bar"></div>
+				<div class="bg__foo bg_need"></div>
+				<div class="bg__bar bg_need"></div>
 				<a name="intro"></a>
-				<div id="greeting" class="container-fluid pad-down"></div>
-				<div id="intro" class="container-fluid pad-down bottom"></div>
+				<div id="greeting" class="container-fluid pad-down need-text"></div>
+				<div id="intro" class="container-fluid pad-down bottom need-text"></div>
 				<img src="img/berlin.jpg" class="img-responsive img-rounded intro-image" alt="Responsive image">
 				<div class="separated"></div>
-				<div class="bg__baz"></div>
+				<div class="bg__baz bg_need"></div>
 				<!--thumbnail gallery of other work-->
 				<div id="other-work" class="row thumbnail-row pad-down">
 					<div class="col-sm-6 col-md-4">
-						<div class="thumbnail">
+						<div class="thumbnail need-text">
 							<img class="website-thumbnail" src="./img/lingorator.png" alt="Lingorator">
 							<div class="caption">
 								<h3>Lingorator</h3>
@@ -105,7 +102,7 @@
 						</div>
 					</div>
 					<div class="col-sm-6 col-md-4">
-						<div class="thumbnail">
+						<div class="thumbnail need-text">
 							<img class="website-thumbnail" src="./img/kiteCrypt.png" alt="kiteCrypt">
 							<div class="caption">
 								<h3>kiteCrypt</h3>
@@ -118,10 +115,10 @@
 				</div>
 				<div class="separated"></div>
 
-				<div class="bg__bar"></div>
+				<div class="bg__bar bg_need"></div>
 
 				<!--Begin Contact Form-->
-				<form id="contact-form" action="php/phpmailer.php" method="post" class="col-xs-10 col-xs-offset-1 text-center top bottom">
+				<form id="contact-form" action="php/phpmailer.php" method="post" class="col-xs-10 col-xs-offset-1 text-center top bottom need-text">
 					<h2><div id="contact"></div></h2>
 					<div class="form-group">
 						<label for="name"><div id="name-inject"></div><span class="text-danger">*</span></label>
@@ -172,14 +169,14 @@
 					</div>
 				</div>
 
-				<div class="bg__baz"></div>
+				<div class="bg__baz bg_need"></div>
 
 			</div>
 		</article>
 
 	</body>
 	<footer>
-		<nav class="navbar navbar-dark bg-inverse navbar-fixed-bottom inanimate-nav">
+		<nav class="navbar navbar-dark bg-inverse navbar-fixed-bottom inanimate-nav need-text">
 			<div class="container-fluid">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
@@ -193,7 +190,7 @@
 						<span class="sr-only">Toggle navigation</span>
 					</button>
 
-					<a class="navbar-brand scroll" href="#page-top">m-fisher.net</a>
+					<a class="navbar-brand scroll" href="#page-top">Logan Young</a>
 
 				</div>
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-3">
@@ -212,9 +209,6 @@
 						<li><a href="#intro" class="scroll"><div class="intro-link"></div></a></li>
 						<li><a href="#other-work" class="scroll"><div class="other-work-link"></div></a></li>
 						<li><a href="#contact" class="scroll"><div class="contact-link"></div></a></li>
-						<li><a href="https://www.linkedin.com/in/matthew-r-fisher" target="_blank">LinkedIn</a></li>
-						<li><a href="https://github.com/karstagg" target="_blank" >Github</a></li>
-						<li><a href="./img/matthew_fisher_resume.pdf" target="_blank"><div class="resume-link"></div></a></li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container-fluid -->

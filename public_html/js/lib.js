@@ -1,4 +1,6 @@
+
 $(document).ready(function() {
+
 	var currentLanguage;
 	//adapted from http://www.quirksmode.org/js/cookies.html
 	//reads cookie readCookie("lang")
@@ -57,12 +59,18 @@ $(document).ready(function() {
 		switch(timeOfDay) {
 			case "morning":
 				$("#greeting").load("php/content-" + currentLanguage + ".php #morning-" + currentLanguage);
+					$(".bg_need").addClass("morning");
+					$(".need-text").addClass("morning-text");
 				break;
 			case "afternoon":
 				$("#greeting").load("php/content-" + currentLanguage + ".php #afternoon-" + currentLanguage);
+					$(".bg_need").addClass("noon");
+					$(".need-text").addClass("day-text");
 				break;
 			case "evening":
 				$("#greeting").load("php/content-" + currentLanguage + ".php #evening-" + currentLanguage);
+				$(".bg_need").addClass("night");
+				$(".need-text").addClass("night-text");
 				break;
 		}
 
