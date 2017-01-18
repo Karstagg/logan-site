@@ -74,6 +74,9 @@ backgrounds and font by time of day
 	box-shadow: inset 0 0 5px lightgray;
 	transition-duration: 200ms;
 }
+.night-brand {
+	background: linear-gradient(270deg,black, black, black, rgba(206, 136, 22, 1),rgba(206, 136, 22, 1), #D7504A, #D7504A, #1A1818, #1A1818, black, black, black);
+}
 .noon {
 	background-image: url(../img/Superman-and-ponyo.JPG);
 }
@@ -104,6 +107,9 @@ backgrounds and font by time of day
 	box-shadow: inset 0 0 5px dimgray;
 	transition-duration: 200ms;
 }
+.day-brand {
+	background: linear-gradient(270deg,black, black, black, #722249,#722249, rgba(69, 156, 235, 1), rgba(69, 156, 235, 1), #10357B, #10357B, black, black, black);
+}
 .morning {
 	background-image: url(../img/logan-sakura.jpg);
 }
@@ -133,6 +139,9 @@ backgrounds and font by time of day
 	background-color: rgba(146, 143, 170, 1);
 	box-shadow: inset 0 0 5px dimgray;
 	transition-duration: 200ms;
+}
+.morning-brand {
+	background: linear-gradient(270deg,black, black, black, rgba(146, 143, 170, 1),rgba(146, 143, 170, 1), rgba(229, 227, 230, 1), rgba(229, 227, 230, 1), #762754, #762754, black, black, black);
 }
 /*******************************************
 buttons
@@ -180,15 +189,12 @@ navbar
 .navbar-dark .navbar-brand {
 	padding-top: 22px;
 	font-size: 2.2rem;
-	background: linear-gradient(270deg,black, black, black, black, #31018C,#31018C, #4C007E, #4C007E, #880054, #880054, #C1002F, #C1002F, #FF3E00, #FF3E00, #FF7D00, #FF7D00, #FFB300, #FFB300, #FCFC07, #FCFC07, #B7F113, #B7F113, black, black, black, black);
 );
 	background-size: 800% 800%;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 .animate-nav {
-	background: linear-gradient(270deg,black, black, black, black, #31018C,#31018C, #4C007E, #4C007E, #880054, #880054, #C1002F, #C1002F, #FF3E00, #FF3E00, #FF7D00, #FF7D00, #FFB300, #FFB300, #FCFC07, #FCFC07, #B7F113, #B7F113, black, black, black, black);
-);
 	background-size: 800% 800%;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;

@@ -48,7 +48,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand scroll" href="#page-top">Logan Young</a>
+					<a class="navbar-brand scroll need-brand" href="#page-top">Logan Young</a>
 				</div>
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right">
@@ -190,7 +190,7 @@
 						<span class="sr-only">Toggle navigation</span>
 					</button>
 
-					<a class="navbar-brand scroll" href="#page-top">Logan Young</a>
+					<a class="navbar-brand scroll need-brand" href="#page-top">Logan Young</a>
 
 				</div>
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-3">
