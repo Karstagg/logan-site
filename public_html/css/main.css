@@ -42,7 +42,9 @@ body {
 	}
 }
 
-/*backgrounds and font by time of day*/
+/*****************************************
+backgrounds and font by time of day
+*****************************************/
 .night {
 	background-image: url(../img/Where-did-my-pancakes-go.JPG);
 }
@@ -54,7 +56,23 @@ body {
 	background-color: rgba(206, 136, 22, .5);
 }
 .night-color {
-	background-color: rgba(251, 186, 184, 1);
+	background-color: rgba(206, 136, 22, .5);
+}
+.night-button {
+	background-color: rgba(206, 136, 22, 1);
+	color: black;
+}
+.night-button:hover{ /*site navigation buttons*/
+	color: rgba(206, 136, 22, 1);
+	background-color: #1A1818;
+	box-shadow: inset 0 0 5px dimgray;
+	transition-duration: 300ms;
+}
+.night-button:active{ /*site navigation buttons*/
+	color: #D7504A;
+	background-color: black;
+	box-shadow: inset 0 0 5px lightgray;
+	transition-duration: 200ms;
 }
 .noon {
 	background-image: url(../img/Superman-and-ponyo.JPG);
@@ -70,6 +88,22 @@ body {
 .day-color {
 	background-color: rgba(167, 207, 233, 1);
 }
+.day-button {
+	background-color: rgba(69, 156, 235, 1);
+	color: #10357B;
+}
+.day-button:hover{ /*site navigation buttons*/
+	color: rgba(69, 156, 235, 1);
+	background-color: #10357B;
+	box-shadow: inset 0 0 5px dimgray;
+	transition-duration: 300ms;
+}
+.day-button:active{ /*site navigation buttons*/
+	color: #722249;
+	background-color: #6486AB;
+	box-shadow: inset 0 0 5px dimgray;
+	transition-duration: 200ms;
+}
 .morning {
 	background-image: url(../img/logan-sakura.jpg);
 }
@@ -84,9 +118,26 @@ body {
 .morning-color {
 	background-color: rgba(146, 143, 170, 1);
 }
+.morning-button {
+	background-color: rgba(229, 227, 230, 1);
+	color: #762754;
+}
+.morning-button:hover{ /*site navigation buttons*/
+	color: rgba(229, 227, 230, 1);
+	background-color: #762754;
+	box-shadow: inset 0 0 5px dimgray;
+	transition-duration: 300ms;
+}
+.morning-button:active{ /*site navigation buttons*/
+	color: #722249;
+	background-color: rgba(146, 143, 170, 1);
+	box-shadow: inset 0 0 5px dimgray;
+	transition-duration: 200ms;
+}
 /*******************************************
 buttons
 *******************************************/
+
 .custom-btn{ /*site navigation buttons*/
 	display: inline-block;
 	font-size: 2rem;
@@ -94,8 +145,6 @@ buttons
 	text-align: center;
 	text-decoration: none;
 	outline: none;
-	color: #880054 !important;
-	background-color: lightgrey;
 	border: none;
 	border-radius: 10%;
 	box-shadow: inset 0 0 10px #1A1818;
@@ -112,18 +161,7 @@ buttons
 	position: absolute;
 	bottom: 6%;
 }
-.custom-btn:hover{ /*site navigation buttons*/
-	color: #C1002F !important;
-	background-color: dimgray;
-	box-shadow: inset 0 0 5px #1A1818;
-	transition-duration: 500ms;
-}
-.custom-btn:active{ /*site navigation buttons*/
-	color: #FF3E00 !important;
-	background-color: #1A1818;
-	box-shadow: inset 0 0 5px dimgray;
-	transition-duration: 200ms;
-}
+
 .top {
 	padding-top: 2%;
 }

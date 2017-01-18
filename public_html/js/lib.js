@@ -52,7 +52,7 @@ $(document).ready(function() {
 	else {
 		timeOfDay = "evening"
 	}
-	timeOfDay = "evening"
+	timeOfDay = "morning"
 	function insertText () {
 		currentLanguage = readCookie("lang");
 
@@ -63,6 +63,7 @@ $(document).ready(function() {
 				$(".bg_need").addClass("morning");
 				$(".need-text").addClass("morning-text");
 				$(".need-nav-bg").addClass("nav-morning");
+				$(".need-colors").addClass("morning-button");
 				$("body").addClass("morning-color");
 				break;
 			case "afternoon":
@@ -70,6 +71,7 @@ $(document).ready(function() {
 				$(".bg_need").addClass("noon");
 				$(".need-text").addClass("day-text");
 				$(".need-nav-bg").addClass("nav-day");
+				$(".need-colors").addClass("day-button");
 				$("body").addClass("day-color");
 				break;
 			case "evening":
@@ -77,6 +79,7 @@ $(document).ready(function() {
 				$(".bg_need").addClass("night");
 				$(".need-text").addClass("night-text");
 				$(".need-nav-bg").addClass("nav-night");
+				$(".need-colors").addClass("night-button");
 				$("body").addClass("night-color");
 				break;
 		}

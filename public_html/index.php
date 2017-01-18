@@ -78,7 +78,7 @@
 
 				<div class="cover">
 					<div class="col-xs-6 text-center col-xs-offset-3 v-center">
-						<a href="#intro" class="btn custom-btn scroll need-text"><div id="enter-btn"></div></a>
+						<a href="#intro" class="btn custom-btn scroll need-text need-colors"><div id="enter-btn"></div></a>
 					</div>
 				</div>
 				<div class="bg__foo bg_need"></div>
@@ -97,7 +97,7 @@
 							<div class="caption">
 								<h3>Lingorator</h3>
 								<p id="lingorator-text"></p>
-								<a href="" class="btn custom-btn custom-btn3" role="button" disabled><div class="deadLink"></div></a>
+								<a href="" class="btn custom-btn custom-btn3 need-colors" role="button" disabled><div class="deadLink"></div></a>
 							</div>
 						</div>
 					</div>
@@ -107,7 +107,7 @@
 							<div class="caption">
 								<h3>kiteCrypt</h3>
 								<p id="kiteCrypt-text"></p>
-								<a href="" class="btn custom-btn custom-btn3" role="button" disabled><div class="deadLink"></div></a>
+								<a href="" class="btn custom-btn custom-btn3 need-colors" role="button" disabled><div class="deadLink"></div></a>
 							</div>
 						</div>
 					</div>
@@ -159,8 +159,8 @@
 
 					<!-- reCAPTCHA -->
 					<div class="g-recaptcha recap-style" data-theme="dark" data-sitekey="6Leyiw0UAAAAACK9mXrHUkLCGALZBgZQFigbXl2U"></div>
-					<button id="submitter" class="btn custom-btn custom-btn2" type="submit"><i class="fa fa-paper-plane"></i><div id="send"></div></button>
-					<button class="btn custom-btn custom-btn2" type="reset"><i class="fa fa-ban"></i><div id="reset"></div></button>
+					<button id="submitter" class="btn custom-btn custom-btn2 need-colors" type="submit"><i class="fa fa-paper-plane"></i><div id="send"></div></button>
+					<button class="btn custom-btn custom-btn2 need-colors" type="reset"><i class="fa fa-ban"></i><div id="reset"></div></button>
 				</form>
 				<!--empty area for form error/success output-->
 				<div class="container no-overflow">
