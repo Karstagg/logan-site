@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<?php require_once("php/image-list.php")?>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 		<!-- sets width to css pixes (1/96 inch) -->
@@ -59,8 +60,6 @@
 									<input name="lang2" id="en2" type="radio" value="en"></li>
 								<li><label for="jp2" class="lang_label jp_label"><h1>JP</h1></label>
 									<input name="lang2" id="jp2" type="radio" value="jp"></li>
-								<li><label for="de2" class="lang_label de_label"><h1>DE</h1></label>
-									<input name="lang2" id="de2" type="radio" value="de"></li>
 							</ul>
 						</li>
 						<li><a href="#intro" class="scroll"><div class="intro-link need-text"></div></a></li>
@@ -86,31 +85,22 @@
 				<a name="intro"></a>
 				<div id="greeting" class="container-fluid pad-down need-text"></div>
 				<div id="intro" class="container-fluid pad-down bottom need-text"></div>
-				<img src="img/berlin.jpg" class="img-responsive img-rounded intro-image" alt="Responsive image">
+				<img src="img/logan.jpg" class="img-responsive img-rounded intro-image" alt="Responsive image">
 				<div class="separated"></div>
 				<div class="bg__baz bg_need"></div>
 				<!--thumbnail gallery of other work-->
-				<div id="other-work" class="row thumbnail-row pad-down">
-					<div class="col-sm-6 col-md-4">
-						<div class="thumbnail need-text">
-							<img class="website-thumbnail" src="./img/lingorator.png" alt="Lingorator">
-							<div class="caption">
-								<h3>Lingorator</h3>
-								<p id="lingorator-text"></p>
-								<a href="" class="btn custom-btn custom-btn3 need-colors" role="button" disabled><div class="deadLink"></div></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-6 col-md-4">
-						<div class="thumbnail need-text">
-							<img class="website-thumbnail" src="./img/kiteCrypt.png" alt="kiteCrypt">
-							<div class="caption">
-								<h3>kiteCrypt</h3>
-								<p id="kiteCrypt-text"></p>
-								<a href="" class="btn custom-btn custom-btn3 need-colors" role="button" disabled><div class="deadLink"></div></a>
-							</div>
-						</div>
-					</div>
+				<div id="other-work" class="row thumbnail-row pad-down thumbnail-row-height">
+
+						<?php
+						foreach ($imgArray as $value) {
+						echo '<div class="col-xs-12 col-md-2"> 
+						<a href='."img/work/$value".' class="thumbnail" target="_blank">
+							<img class="thumbnail-img" src='."img/work-thumbnails/$value".' alt="$value">
+						</a></div>';
+							}
+						?>
+
+				<div class="row">
 
 				</div>
 				<div class="separated"></div>
@@ -199,8 +189,6 @@
 						<input name="lang" id="en" type="radio" value="en">
 						<label for="jp" class="lang_label jp_label"><h1>JP</h1></label>
 						<input name="lang" id="jp" type="radio" value="jp">
-						<label for="de" class="lang_label de_label"><h1>DE</h1></label>
-						<input name="lang" id="de" type="radio" value="de">
 					</div>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->

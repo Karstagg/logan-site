@@ -52,7 +52,7 @@ $(document).ready(function() {
 	else {
 		timeOfDay = "evening"
 	}
-	timeOfDay = "evening";
+
 	function insertText () {
 		currentLanguage = readCookie("lang");
 
