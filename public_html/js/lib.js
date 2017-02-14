@@ -157,6 +157,17 @@ $(document).ready(function() {
 		}, 2025);
 
 	});
+
+
+	$('.slider').slick({
+		mobileFirst: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: true,
+		fade: true,
+		swipeToSlide: false,
+	});
+
 /********************************************************************************
  validation for form
 ********************************************************************************/

@@ -8,7 +8,7 @@
 	<body>
 		<!--links-->
 		<div id="intro-link-en">Intro</div>
-		<div id="other-work-link-en">Other Work</div>
+		<div id="other-work-link-en">Art</div>
 		<div id="contact-link-en">Contact</div>
 		<div id="resume-link-en">Resume</div>
 		<!--greeting and info-->

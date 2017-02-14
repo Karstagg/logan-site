@@ -18,6 +18,8 @@
 		<link rel="stylesheet" href="css/main.css" type="text/css"/>
 		<link href="https://fonts.googleapis.com/css?family=Pacifico|Righteous|Rock+Salt" rel="stylesheet">
 		<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 		<!-- HTML5 shiv and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -33,8 +35,10 @@
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/additional-methods.min.js"></script>
 		<script src='https://www.google.com/recaptcha/api.js'></script>
 		<!--custom js-->
+
+		<script type="text/javascript" src="slick/slick.min.js"></script>
 		<script src="js/lib.js"></script>
-		<title>Logan Young</title>
+		<title>Logan Young Art</title>
 	</head>
 	<body>
 
@@ -49,7 +53,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand scroll need-brand" href="#page-top">Logan Young</a>
+					<a class="navbar-brand scroll need-brand" href="#page-top">Logan Young Art</a>
 				</div>
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right">
@@ -100,14 +104,27 @@
 							}
 						?>
 
-				<div class="row">
 
 				</div>
 				<div class="separated"></div>
+				<div class="bg__baz bg_need"></div>
+				<div id="comics">
+					<div class="comic">
+						<div class="slider" id="slider">
+							<?php
+							foreach ($comic1Array as $value) {
 
+								echo '<div class="slick-div"><img src='."img/comic1/$value" .' alt= '. "$value" .' class="sized-img" ></div>';
+							}
+							?>
+						</div>
+					</div>
+				</div>
+				<div id="arrows"><i class="fa fa-arrows-h fa-5x" aria-hidden="true"></i></div>
 				<div class="bg__bar bg_need"></div>
 
 				<!--Begin Contact Form-->
+				<div class="separated"></div>
 				<form id="contact-form" action="php/phpmailer.php" method="post" class="col-xs-10 col-xs-offset-1 text-center top bottom need-text">
 					<h2><div id="contact"></div></h2>
 					<div class="form-group">
@@ -161,7 +178,7 @@
 
 				<div class="bg__baz bg_need"></div>
 
-			</div>
+
 		</article>
 
 	</body>
@@ -180,7 +197,7 @@
 						<span class="sr-only">Toggle navigation</span>
 					</button>
 
-					<a class="navbar-brand scroll need-brand" href="#page-top">Logan Young</a>
+					<a class="navbar-brand scroll need-brand" href="#page-top">Logan Young Art</a>
 
 				</div>
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-3">
