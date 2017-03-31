@@ -68,6 +68,7 @@
 						</li>
 						<li><a href="#intro" class="scroll"><div class="intro-link need-text"></div></a></li>
 						<li><a href="#other-work" class="scroll"><div class="other-work-link need-text"></div></a></li>
+						<li><a href="#comics" class="scroll"><div class="comics-link need-text"></div></a></li>
 						<li><a href="#contact" class="scroll"><div class="contact-link need-text"></div></a></li>
 					</ul>
 				</div><!-- /.navbar-collapse -->

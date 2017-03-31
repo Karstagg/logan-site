@@ -9,6 +9,7 @@
 		<!--links-->
 		<div id="intro-link-en">Intro</div>
 		<div id="other-work-link-en">Art</div>
+		<div id="comics-link-en">Comics</div>
 		<div id="contact-link-en">Contact</div>
 		<div id="resume-link-en">Resume</div>
 		<!--greeting and info-->
@@ -17,11 +18,6 @@
 		<div id="afternoon-en"><h1>Good afternoon!</h1></div>
 		<div id="evening-en"><h1>Good evening!</h1></div>
 		<div id="intro-en"><p>This is the web page of Logan Young. Here you can check out Logan's work or contact him.</p></div>
-		<!--other work-->
-		<div id="dead-work-link-en">Under Construction</div>
-		<div id="live-work-link-en">Check it out!</div>
-		<div id="kiteCrypt-en">A zero knowledge encrypted chat application.</div>
-		<div id="lingorator-en">An application to help linguists generate new languages.</div>
 		<!--contact form-->
 		<div id="contact-en">Contact</div>
 		<div id="name-en">Name</div>

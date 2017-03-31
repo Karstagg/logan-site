@@ -9,6 +9,7 @@
 		<!--links-->
 		<div id="intro-link-jp">プロフィール</div>
 		<div id="other-work-link-jp">作品</div>
+		<div id="comics-link-jp">漫画</div>
 		<div id="contact-link-jp">お問い合わせ</div>
 		<div id="resume-link-jp">履歴書</div>
 		<!--greeting and info-->

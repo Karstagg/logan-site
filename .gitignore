@@ -1,4 +1,5 @@
 /.idea
 .DS_Store
 /vendor
+/.htaccess
 **/php/mail-config.php
