@@ -1,4 +1,3 @@
-AddType application/x-httpd-php70 .php
 RewriteEngine on
 RewriteCond %{HTTP_HOST} ^loganyoungart.com$ [NC,OR]
 RewriteCond %{HTTP_HOST} ^www.loganyoungart.com$
