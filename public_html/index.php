@@ -121,7 +121,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="text-center swipe"><h2>Swipe</h2></div>
+				<div id="arrows"><i class="fa fa-arrows-h fa-5x" aria-hidden="true"></i></div>
 				<div class="bg__bar bg_need"></div>
 
 				<!--Begin Contact Form-->
