@@ -108,7 +108,7 @@
 
 				</div>
 				<div class="separated"></div>
-				<div class="bg__baz bg_need"></div>
+				<div class="bg__bazz bg_need"></div>
 				<div id="comics">
 					<div class="comic">
 						<div class="slider" id="slider">
@@ -166,7 +166,7 @@
 					</div>
 
 					<!-- reCAPTCHA -->
-					<div class="g-recaptcha recap-style" data-theme="dark" data-sitekey="6Leyiw0UAAAAACK9mXrHUkLCGALZBgZQFigbXl2U"></div>
+					<div class="g-recaptcha recap-style" data-theme="dark" data-sitekey="6LezxhsUAAAAAFDqGLuqUZ6NQ1aXtd4t3m5Y040m"></div>
 					<button id="submitter" class="btn custom-btn custom-btn2 need-colors" type="submit"><i class="fa fa-paper-plane"></i><div id="send"></div></button>
 					<button class="btn custom-btn custom-btn2 need-colors" type="reset"><i class="fa fa-ban"></i><div id="reset"></div></button>
 				</form>
